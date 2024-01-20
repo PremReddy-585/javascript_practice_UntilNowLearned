@@ -31,3 +31,16 @@ let labelElement = document.createElement("label");
 labelElement.setAttribute("for", "checkbox" );
 labelElement.textContent = "Graduated";
 document.body.appendChild(labelElement);
+
+//sum of values of an array
+let numbers = [1, 2, 3, 4, 5];
+
+function calculateSum(array){
+    let sum = 0;
+    for(let i = 0; i < array.length;i++){
+        sum+= array[i];
+    }
+    return sum;
+}
+let result = calculateSum(numbers);
+console.log("sum:", result);
